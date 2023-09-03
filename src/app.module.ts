@@ -4,7 +4,6 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './api/auth/auth.module';
 import { UserModule } from './api/user/user.module';
-//
 import { Banner } from './infra/entities/banner.entity';
 import { BaseEntity } from './infra/entities/base.entity';
 import { Basket } from './infra/entities/basket.entity';

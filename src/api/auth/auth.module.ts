@@ -11,7 +11,7 @@ import { Admin } from '../../infra/entities/admin.entity';
   imports: [
     JwtModule.register({
       global: true,
-      secret: process.env.SECRET_KEY,
+      secret: process.env.SECRET_KEY || "Thi@#$_21312_#i$",
       signOptions: { expiresIn: '24h' },
     }),
     TypeOrmModule.forFeature([User, Admin]),

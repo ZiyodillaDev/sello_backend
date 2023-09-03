@@ -48,7 +48,7 @@ export class AuthService {
     try {
       const { email, password } = body;
 
-      if (email !== "admin123@gmail.com")
+      if (email !== "admin@gmail.com")
       return { message: 'You are not admin!' };
 
       if (password !== "admin")

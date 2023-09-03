@@ -20,8 +20,8 @@ async function bootstrap() {
 
   app.setGlobalPrefix('api');
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('Sello.uz website')
-    .setDescription('The sello.uz website API documentation')
+    .setTitle('Sello.uz')
+    .setDescription('The sello.uz API documentation')
     .setVersion('1.0')
     .addTag('default')
     .build();

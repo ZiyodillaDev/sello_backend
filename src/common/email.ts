@@ -5,8 +5,8 @@ export const emailSending = async (email: string, res: Response) => {
     port: 465,
     host: 'smtp.gmail.com',
     auth: {
-      user: 'abdulazizkenjaoxunov@gmail.com',
-      pass: 'voibutzlaxatjoyi',
+      user: 'ziyodillazokirkhujayev@gmail.com',
+      pass: 'ziyodilla123',
     },
     secure: true,
   });
@@ -14,12 +14,12 @@ export const emailSending = async (email: string, res: Response) => {
   res.cookie('code', code, { maxAge: 120 * 100 * 60 });
   res.cookie('email', email, { maxAge: 120 * 100 * 60 });
   const mailData = {
-    from: 'abdulazizkenjaoxunov@gmail.com',
+    from: 'ziyodillazokirkhujayev@gmail.com',
     to: `${email}`,
-    subject: 'Tasdiqlash kodi',
-    text: 'That was easy!',
-    html: `<b>Assalomu alaykum </b>
-             <br> Brat shu sizning tastiqlash kodingiz: ${code}<br/>`,
+    subject: 'Confirmation Code',
+    text: 'This is your Confirmation Code!',
+    html: `<b>Hello</b>
+             <br>Confirmation Code is ${code}<br/> Note: Please do not give this information to others<br/>`,
   };
 
   res.status(200).json({ message: 'Verification code sent to your email' });
